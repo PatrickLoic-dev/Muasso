@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Muasso",
+    "slug": "muassoapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.stripe.react.native",
+          "enableGooglePay": false
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.patrickloic.muassoapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "githubUrl": "https://github.com/coderkhalide/uber-eats-clone",
+    "extra": {
+      "eas": {
+        "projectId": "01a2196e-4b66-4e4b-a879-848a06daafd8"
+      }
+    }
+  }
+}
